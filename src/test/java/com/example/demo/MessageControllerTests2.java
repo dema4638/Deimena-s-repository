@@ -13,7 +13,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class MessageControllerTests {
+public class MessageControllerTests2 {
 
     public static final String MESSAGE = "DB works";
     @Mock
