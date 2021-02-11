@@ -30,12 +30,12 @@ public class MessageControllerTests {
     @Test
     public void shouldBEandDBWork() {
         when(repository.findAll()).thenReturn(Arrays.asList(new Message(MESSAGE)));
-        assertEquals(MessageController.BE_SUCCESS_MESSAGE + MessageController.DB_SUCCESS_MESSAGE + MESSAGE, controller.getMessage()+"Fail");
+        assertEquals(MessageController.BE_SUCCESS_MESSAGE + MessageController.DB_SUCCESS_MESSAGE + MESSAGE, controller.getMessage());
       //  controller.helloWorld()
     }
     @Test
     public void shouldWorkOnlyBE() {
         when(repository.findAll()).thenReturn(new ArrayList<>());
-        assertEquals(MessageController.BE_SUCCESS_MESSAGE, controller.getMessage()+"Fail");
+        assertEquals(MessageController.BE_SUCCESS_MESSAGE, controller.getMessage());
     }
 }
